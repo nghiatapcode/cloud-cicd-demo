@@ -1,1 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Cloud CI/CD Demo</title>
 
+    <style>
+        body{
+            font-family: Arial;
+            text-align:center;
+            margin-top:100px;
+            background:#f2f2f2;
+        }
+
+        .box{
+            background:white;
+            width:500px;
+            margin:auto;
+            padding:30px;
+            border-radius:10px;
+            box-shadow:0 0 10px gray;
+        }
+
+        button{
+            padding:10px 20px;
+            background:blue;
+            color:white;
+            border:none;
+            border-radius:5px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="box">
+
+    <h1>Cloud CI/CD Demo</h1>
+
+    <p>Website deploy tự động bằng GitHub Actions</p>
+
+    <button onclick="showMessage()">
+        Nhấn vào đây
+    </button>
+
+    <p id="msg"></p>
+
+</div>
+
+<script>
+function showMessage(){
+    document.getElementById("msg").innerHTML =
+    "GitHub Actions đang hoạt động!";
+}
+</script>
+
+</body>
+</html>
